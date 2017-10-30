@@ -33,7 +33,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = server1.0.0
-DISTDIR = /root/repo-github/pedestrian-v8/server/build/.tmp/server1.0.0
+DISTDIR = /root/repo-github/pedestrian-v9/server/build/.tmp/server1.0.0
 LINK          = g++
 LFLAGS        = -Wl,--rpath=/root/sources/opencv-2.4.9/build/__install/lib -Wl,-O1
 LIBS          = $(SUBLIBS) -L/root/sources/opencv-2.4.9/build/__install/lib/ -lopencv_core -lopencv_highgui -lopencv_objdetect -lopencv_imgproc -lopencv_ml -lopencv_video -lQt5Network -lQt5Core -lpthread 
@@ -354,12 +354,12 @@ moc_server.cpp: ../common.h \
 		../videohandler.h \
 		../serverinforeporter.h \
 		../server.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v8/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../server.h -o moc_server.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v9/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../server.h -o moc_server.cpp
 
 moc_serverinforeporter.cpp: ../common.h \
 		../protocol.h \
 		../serverinforeporter.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v8/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../serverinforeporter.h -o moc_serverinforeporter.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v9/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../serverinforeporter.h -o moc_serverinforeporter.cpp
 
 moc_videosrc.cpp: ../../../../sources/opencv-2.4.9/build/__install/include/opencv2/core/core.hpp \
 		../../../../sources/opencv-2.4.9/build/__install/include/opencv2/core/types_c.h \
@@ -378,7 +378,7 @@ moc_videosrc.cpp: ../../../../sources/opencv-2.4.9/build/__install/include/openc
 		../../../../sources/opencv-2.4.9/build/__install/include/opencv2/objdetect/objdetect.hpp \
 		../common.h \
 		../videosrc.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v8/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../videosrc.h -o moc_videosrc.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v9/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../videosrc.h -o moc_videosrc.cpp
 
 moc_videohandler.cpp: ../config.h \
 		../common.h \
@@ -398,7 +398,7 @@ moc_videohandler.cpp: ../config.h \
 		../../../../sources/opencv-2.4.9/build/__install/include/opencv2/ml/ml.hpp \
 		../../../../sources/opencv-2.4.9/build/__install/include/opencv2/objdetect/objdetect.hpp \
 		../videohandler.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v8/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../videohandler.h -o moc_videohandler.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v9/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../videohandler.h -o moc_videohandler.cpp
 
 moc_camera.cpp: ../../../../sources/opencv-2.4.9/build/__install/include/opencv2/core/core.hpp \
 		../../../../sources/opencv-2.4.9/build/__install/include/opencv2/core/types_c.h \
@@ -420,11 +420,11 @@ moc_camera.cpp: ../../../../sources/opencv-2.4.9/build/__install/include/opencv2
 		../videosrc.h \
 		../videohandler.h \
 		../camera.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v8/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../camera.h -o moc_camera.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v9/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../camera.h -o moc_camera.cpp
 
 moc_config.cpp: ../common.h \
 		../config.h
-	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v8/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../config.h -o moc_config.cpp
+	/usr/lib/i386-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/root/repo-github/pedestrian-v9/server -I/root/sources/opencv-2.4.9/build/__install/include -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtNetwork -I/usr/include/i386-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/i386-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/i686-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/5/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include ../config.h -o moc_config.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
