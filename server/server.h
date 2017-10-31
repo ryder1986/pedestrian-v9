@@ -206,7 +206,7 @@ public slots:
         ClientSession *client=new ClientSession(skt,this->cam_manager);
         connect(client,SIGNAL(socket_error(ClientSession*)),this,SLOT(delete_client(ClientSession*)));
         clients.append(client);
-        connect(client,SIGNAL(get_server_config(char *)),cam_manager,SLOT(get_config(char *)));
+      //  connect(client,SIGNAL(get_server_config(char *)),cam_manager,SLOT(get_config(char *)));
         connect(cam_manager,SIGNAL(output_2_client(QByteArray)),this,SLOT(output_2_client(QByteArray)));
     }
     void delete_client(ClientSession *c)
