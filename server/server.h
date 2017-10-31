@@ -94,7 +94,7 @@ public slots:
         int ret=0;
         int cmd=Protocol::get_operation(client_buf.data());
         int pkg_len=Protocol::get_length(client_buf.data());
-        int cam_index=Protocol::get_index(client_buf.data());
+        int cam_index=Protocol::get_cam_index(client_buf.data());
         memset(buf,0,BUF_MAX_LEN);
         QByteArray bta;
         switch (cmd) {

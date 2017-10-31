@@ -164,7 +164,7 @@ protected:
             if(work()!=true){
                 restart_video();
                 //  emit restart_source();
-                QThread::msleep(100);//try work after 200ms
+                QThread::msleep(200);//try work after 200ms
                 //      break;
             }
             QThread::msleep(30);

@@ -18,33 +18,15 @@ class CameraManager;
 class VideoHandler: public QObject{
     Q_OBJECT
 public:
-
     IplImage * frame_ori;
     VideoHandler()
     {
 
     }
-
-
-    //    void operator>>(VideoHandler &handler)
-    //   {
-    //        //  handler.frame_ori= cvQ     return handler;
-    //   }
     ~VideoHandler()
     {
 
     }
-//    void queue_frame( IplImage * frame)
-//    {
-//        frame_ori=frame;
-
-//    }
-
-
-//    void set_frame( IplImage * frame)
-//    {
-//        frame_ori=frame;
-//    }
     void set_frame( Mat * frame)
     {
         frame_mat=frame;
@@ -80,17 +62,17 @@ public:
             //   frame_ori = cvQueryFrame(p_cap);
             //   frame.create(frame_ori->height,frame_ori->width,CV_8U);
             //   memcpy(frame.data,frame_ori->imageData,frame_ori->imageSize);
-           // Mat frame(frame_ori);
+            // Mat frame(frame_ori);
 
 
-         // int test=  waitKey(1);
-           //     printf("%d\n",test);
+            // int test=  waitKey(1);
+            //     printf("%d\n",test);
             Mat frame(*frame_mat);
-         //   imshow("url",frame);
+            //   imshow("url",frame);
 
-        //    QThread::msleep(1);
+            //    QThread::msleep(1);
 
-        //   return 0;
+            //   return 0;
 
             //  cout << "opened " << endl;
             //*p_cap >> frame;
@@ -120,7 +102,7 @@ public:
 
                     //Mat detect_area = gray_frame(rect);
                     //cascade.detectMultiScale(detect_area,objs,1.1,3);
-                          cascade.detectMultiScale(gray_frame, objs, 1.1, 3);
+                    cascade.detectMultiScale(gray_frame, objs, 1.1, 3);
 
 
                     vector<Rect>::iterator it = objs.begin();
@@ -155,8 +137,8 @@ public:
 
                         }
 
-                      //  rst_ba.append(";");
-                      //  rst_ba.append(rct.x);
+                        //  rst_ba.append(";");
+                        //  rst_ba.append(rct.x);
                         it++;
                     }
 
@@ -168,18 +150,18 @@ public:
                     QThread::msleep(1);
 
 
-     #endif
+#endif
 
 
-//                    waitKey(1);
+                    //                    waitKey(1);
 
-                 //   rectangle(frame,rect,Scalar(0,255,0),2);
-              // imshow("result", frame);
+                    //   rectangle(frame,rect,Scalar(0,255,0),2);
+                    // imshow("result", frame);
                     //outputVideo << frame;
-               //   waitKey(1);
+                    //   waitKey(1);
                     objs.clear();
                 }
-          //      emit send_rst(NULL,1);
+                //      emit send_rst(NULL,1);
 
             }
             else
