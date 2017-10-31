@@ -1,37 +1,11 @@
 #ifndef PROTOCOL_H
 #define PROTOCOL_H
 #define BUF_MAX_LEN 1000
-//#define SERVER_PORT_MAIN 12345
-//#define SERVER_PORT_BROADCAST_CHECK 12346
-//#define CLIENT_PORT_BROADCAST_CHECK 12347
-//#define SERVER_PORT_ALG_RST 12348
-/*
-
-head defination:
-
-    /    head  /   /  body   /
-    -- -- -- --    ---.......
-    byte1-2:data body length,byte 3-4:protocol version, byte 5-6:operation,byte 7-8:reply rst,9->:body
-
-*/
-
-
-//#define GET_CONFIG 0
-//#define ADD_CAMERA 1//add camera at tail
-//#define DEL_CAMERA 2//del camera
-//#define SET_ENV 3//del camera
-//#define GET_ENV 4//del camera
-
-//#define RET_SUCCESS 0
-//#include "QByteArray"
 class Protocol{
 public :
-//    #define VERSION 1
     enum VER{
         VERSION=1
     };
-//    static int head_length=8;
-  //  #define HEAD_LENGTH 8
     enum LEN{
         HEAD_LENGTH=8
     };
